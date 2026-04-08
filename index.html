@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <title>我的履歷</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      background: rgba(0,0,0,0.6);
+      padding: 30px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #aaa;
+      padding-bottom: 5px;
+      margin-top: 30px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #00c6ff;
+      color: black;
+      padding: 5px 10px;
+      border-radius: 20px;
+      margin: 5px;
+      font-size: 14px;
+    }
+
+    a {
+      color: #00c6ff;
+      text-decoration: none;
+    }
+
+    .fade {
+      animation: fadeIn 2s ease;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #00c6ff;
+      color: black;
+      border-radius: 25px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: white;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container fade">
+    <h1>你的名字 😎</h1>
+    <p>學號：你的學號</p>
+
+    <h2>👤 自我介紹</h2>
+    <p>
+      我是一名對科技與創新充滿熱情的學生，喜歡學習程式設計與開發網頁，
+      希望未來能成為一名優秀的工程師。
+    </p>
+
+    <h2>🛠 技能</h2>
+    <span class="tag">HTML</span>
+    <span class="tag">CSS</span>
+    <span class="tag">Python</span>
+    <span class="tag">GitHub</span>
+
+    <h2>📁 作品</h2>
+    <p>（可以放你做過的專題或作業）</p>
+    <a href="#" class="btn">查看作品</a>
+
+    <h2>📞 聯絡方式</h2>
+    <p>Email：your@email.com</p>
+    <p>GitHub：<a href="#">你的連結</a></p>
+  </div>
+
+</body>
+</html>
